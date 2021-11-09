@@ -20,17 +20,17 @@ Methods:
 3/. Aggregate our data in a meaningful way:
 we will generate various dataframe to fragment the information in function of the year for the analysis across time. We could also group data by states to realize the analysis across and within each of them.
 4/. Create relevant visualizations to analyze the data: this is a necessary step to check for correlation, for specific patterns or for unexpected trends for example. 
-5/. Think critically about our data: this part will be the most concluing one and should be smooth if the previous steps have been realized with success. Here we should be able to finally answer to the research questions
+5/. Think critically about our data: this part will be the most concluing one and should be smooth if the previous steps have been realized with success. Here we should be able to finally answer to the research questions.
 
-Timeline: we will have 5 weeks to realize the project (12.11-17.12). The tasks number below correspond to the tasks in the above. section.
-Week1 (12.11-19.11): task 1 + additional researches of quotations if needed
-Week2 (19.11-26.11): task 2
-Week3 (26.11-03.12): task 3
-Week4 (03.12-10.12): task 4
-Week5 (10.12-17.12): task 5
+Timeline: we will have 5 weeks to realize the project (12.11-17.12). The tasks number below correspond to the tasks in the above section.
+Week1 (12.11-19.11): task 1 + additional researches of quotations if needed;
+Week2 (19.11-26.11): task 2;
+Week3 (26.11-03.12): task 3;
+Week4 (03.12-10.12): task 4;
+Week5 (10.12-17.12): task 5;
 
 Organization within the team:
-Alexiane: Plotting graphs during data analysis, crawling the data, preliminary data analysis
-Meghan: Problem formulation, coming up with the algorithm
-Elsa: Coding up the algorithm, running tests, tabulating final results
-Naomie: Writing up the report or the data story, preparing the final presentation
+Alexiane: Plotting graphs during data analysis, crawling the data, preliminary data analysis;
+Meghan: Problem formulation, coming up with the algorithm;
+Elsa: Coding up the algorithm, running tests, tabulating final results;
+Naomie: Writing up the report or the data story, preparing the final presentation.
