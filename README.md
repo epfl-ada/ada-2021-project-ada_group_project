@@ -1,6 +1,6 @@
-Title: Project Applied Data Analysis: Use of Quotebank to analyse Gay Rights in the USA
+Title: Project Applied Data Analysis: Use of Quotebank to analyse evolution of Gay Rights in the USA from 2015 to 2020
 
-Abstract: Through this project, we will use the great potential of Quotebank to analyse Gay Rights in the USA: what are the opinions in different states? What is the president position? How did this topic evolve across time and state borders?  
+Abstract: Through this project, we will use the great potential of Quotebank to analyse the evolution of Gay Rights in the USA: what are the opinions in different states? What is the president position? How did this topic evolve across time and state borders?  
 One could say that it is sufficiant to read on the internet what is the situation related to this topic and then wonder what is the purpose of focusing our project on this subject? As it is kind of a controversial topic with various opinions, changes across time and different actors, it requires an analysis taking into account many parameters. We chose this topic because we thought that it would be more interesting to focus on a controversial theme that would thus refer to different actors (speakers) with meaningful statistics. Moreover, basing our analysis on a comparison between states should give more significant results than looking at the entire country without partitioning it.     
 
 Research questions: 
@@ -11,7 +11,8 @@ What are the main differences in laws and rights between states?
 Are the observations different before and after laws were made (such as the gay wedding)? If so, in which direction did the opinions change? Did it change in a homogenous way?
 Which states show the most similarities here? 
 Are there some states where the topic is into the spotlight or some where it is  more of a taboo theme?
-Are there states with more conflicts?
+Does taboo mean non-acceptance?
+Are there states with more hate crime related to sexual orientation?
 How quotes about gay rights classed by locations are relevent about the mentality and general politic of a state?
 
 Methods:
