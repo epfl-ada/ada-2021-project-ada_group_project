@@ -16,7 +16,7 @@ Are there states with more hate crime related to sexual orientation?
 How quotes about gay rights classed by locations are relevent about the mentality and general politic of a state?
 
 Methods:
-To answer these questions we added a few datasets to make the Quotebank even more relevant regarding our subject. We added The list of politicans by states under the file politicans, the list of hate crimes in the united states in 2015 and 2019.
+To answer these questions we added a few datasets to make the Quotebank even more relevant regarding our subject. We added The list of politicans by states under the file politicans, the list of hate crimes in the united states in 2015 and 2019, we got the percentage of lgbt in the adult population in each state for 2015-2016 in the vale lgbtsummary.
 1/. Create a proper dataset mainly by searching for key words in the quote repository (refer to the code line 'words = ['lesbian', 'gay', 'homosexual', 'gender', 'bisexual', 'sexuality', 'same sex', ...]') and by grouping the politicians in different states to search for pertinent speakers.
 2/. Filter if our datasets appears to be noisy (by checking if basic statistics are plausible for example)
 3/. Aggregate our data in a meaningful way:
