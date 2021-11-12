@@ -24,7 +24,7 @@ we will generate various dataframe to fragment the information in function of th
 4/. Create relevant visualizations to analyze the data: this is a necessary step to check for correlation, for specific patterns or for unexpected trends for example. 
 5/. Think critically about our data: this part will be the most concluing one and should be smooth if the previous steps have been realized with success. Here we should be able to finally answer to the research questions.
 
-Timeline: we will have 5 weeks to realize the project (12.11-17.12). The tasks number below correspond to the tasks in the above section.
+Timeline: We will start by a few explorations and analysis on the quotabank dataset for the year 2015. We will then have 5 weeks to realize the project (12.11-17.12) and go through further analysis including evolution over time.The tasks number below correspond to the tasks in the above section.
 Week1 (12.11-19.11): task 1 + additional researches of quotations if needed;
 Week2 (19.11-26.11): task 2;
 Week3 (26.11-03.12): task 3;
