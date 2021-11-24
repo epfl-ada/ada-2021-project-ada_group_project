@@ -1,7 +1,7 @@
 Title: Project Applied Data Analysis: Use of Quotebank to analyse evolution of Gay Rights in the USA from 2015 to 2020
 
-Abstract: Through this project, we will use the great potential of Quotebank to analyse the evolution of Gay Rights in the USA: what are the opinions in different states? What is the president position? How did this topic evolve across time and state borders?  
-One could say that it is sufficiant to read on the internet what is the situation related to this topic and then wonder what is the purpose of focusing our project on this subject? As it is kind of a controversial topic with various opinions, changes across time and different actors, it requires an analysis taking into account many parameters. We chose this topic because we thought that it would be more interesting to focus on a controversial theme that would thus refer to different actors (speakers) with meaningful statistics. Moreover, basing our analysis on a comparison between states should give more significant results than looking at the entire country without partitioning it.     
+Abstract: Through this project, we will use the great potential of Quotebank to analyse the evolution of opinions regarding LGBT community in the USA: what are the opinions of politicians in different states? What is the president position? How did this topic evolve across time and political state borders? What is the citizens behavior with respect to this topic?
+One could say that it is sufficiant to read on the internet what is the situation related to this topic and then wonder what is the purpose of focusing our project on this subject? As it is kind of a controversial topic with various opinions, changes across time and different actors, it requires an analysis taking into account many parameters. We chose this topic because we thought that it would be more interesting to focus on a controversial theme that would thus refer to different actors (speakers) with meaningful statistics. Moreover, basing our analysis on a comparison between politicians representing the different states should give more significant results than looking at the entire country without partitioning it.     
 
 Research questions: 
 We will ask ourselves several questions such as: 
@@ -24,7 +24,7 @@ we will generate various dataframe to fragment the information in function of th
 4/. Create relevant visualizations to analyze the data: this is a necessary step to check for correlation, for specific patterns or for unexpected trends for example. 
 5/. Think critically about our data: this part will be the most concluing one and should be smooth if the previous steps have been realized with success. Here we should be able to finally answer to the research questions.
 
-Timeline: We will start by a few explorations and analysis on the quotabank dataset for the year 2015. We will then have 5 weeks to realize the project (12.11-17.12) and go through further analysis including evolution over time.The tasks number below correspond to the tasks in the above section.
+Timeline: We will start by a few explorations and analysis on the quotebank dataset for the year 2015. We will then have 5 weeks to realize the project (12.11-17.12) and go through further analysis including evolution over time.The tasks number below correspond to the tasks in the above section.
 Week1 (12.11-19.11): task 1 + additional researches of quotations if needed;
 Week2 (19.11-26.11): task 2;
 Week3 (26.11-03.12): task 3;
