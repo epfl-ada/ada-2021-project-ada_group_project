@@ -11,3 +11,6 @@ To be done:
 - normalize the states with respect to their size (because for e.g, we cannot say that "that California has the highest number of hate crime related to sexual orientation. It is interesting to point it out as we have seen in the previous plot that California has lots of speakers on the matter of gay rights." cause it's the largest state)
 OR/AND look at stats per capita 
 - add a study about Trump
+
+- download list of area and size of population per state -> to normalize? 
+-Correlations in behaviors w.r.t regions instead of states? ie midwest, northeast, south, west show correlated behaviors? run ANOVA, and correlation coeff

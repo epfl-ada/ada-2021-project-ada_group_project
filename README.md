@@ -10,8 +10,8 @@ Did the opinion of the president change? Are there real differences in opinion w
 What are the main differences in laws and rights between states?
 Are the observations different before and after laws were made (such as the gay wedding)? If so, in which direction did the opinions change? Did it change in a homogenous way?
 Which states show the most similarities here? 
-Are there some states where the topic is into the spotlight or some where it is  more of a taboo theme?
-Does taboo mean non-acceptance?
+Are there some states where the topic is into the spotlight in comparison to other states?
+If we consider a state where the topic is not really present, is there a correlation with non-acceptance?
 Are there states with more hate crime related to sexual orientation?
 How quotes about gay rights classed by locations are relevent about the mentality and general politic of a state?
 
