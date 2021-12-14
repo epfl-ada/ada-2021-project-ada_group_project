@@ -146,14 +146,13 @@ def create_corpus(data):
     """
     id2word = corpora.Dictionary(data)
 
-    #max_freq = 0.5
-    #min_wordcount = 5
-    #dictionary.filter_extremes(no_below=min_wordcount, no_above=max_freq)
+    max_freq = 0.5
+    min_wordcount = 5
+    dictionary.filter_extremes(no_below=min_wordcount, no_above=max_freq)
 
     # create corpus
     texts = data
 
-    # term document frequency
     corpus = [id2word.doc2bow(text) for text in texts]
     
     return corpus, id2word
@@ -185,17 +184,12 @@ def run_lda(data_lemmatized, corpus, id2word, num_topics):
     return perplexity, coherence, lda_model
 
 
-def lda_mallet_prep(data_lemmatized):
-    for i in range(len(data_lemmatized)):
-        data_lemmatized[i] = (' '.join(data_lemmatized[i]))
-        
-    lmw.print_dataset_stats(data_lemmatized)
-    return data_lemmatized
 
 
 def word_bubble(lda_model, num_topics):
     """ Creates word bubbles for each topic
-    :param lda_mode: the lda model
+    :param lda_model: the lda model
+    :num_topics: the number of topics
     """
     cols = [color for name, color in mcolors.TABLEAU_COLORS.items()]  # more colors: 'mcolors.XKCD_COLORS'
 
@@ -204,7 +198,7 @@ def word_bubble(lda_model, num_topics):
                       width=2500,
                       height=1800,
                       max_words=10,
-                      colormap='tab10',
+                      colormap='Paired',
                       color_func=lambda *args, **kwargs: cols[i],
                       prefer_horizontal=1.0)
 
@@ -217,7 +211,6 @@ def word_bubble(lda_model, num_topics):
         topic_words = dict(topics[i][1])
         cloud.generate_from_frequencies(topic_words, max_font_size=300)
         plt.gca().imshow(cloud)
-        plt.gca().set_title('Topic ' + str(i), fontdict=dict(size=16))
         plt.gca().axis('off')
 
 
@@ -227,63 +220,7 @@ def word_bubble(lda_model, num_topics):
     plt.tight_layout()
     plt.show()
     
-    
-def tsne(lda_model, corpus):
-    """ Visualizes the topics using tsne
-    :param lda_model: the lda model
-    :param corpus: the corpus
-    """
-    # Get topic weights
-    topic_weights = []
-    for i, row_list in enumerate(lda_model[corpus]):
-        topic_weights.append([w for i, w in row_list[0]])
-
-    # Array of topic weights    
-    arr = pd.DataFrame(topic_weights).fillna(0).values
-
-    # Keep the well separated points (optional)
-    arr = arr[np.amax(arr, axis=1) > 0.35]
-
-    # Dominant topic number in each doc
-    topic_num = np.argmax(arr, axis=1)
-
-    # tSNE Dimension Reduction
-    tsne_model = TSNE(n_components=2, verbose=1, random_state=0, angle=.99, init='pca')
-    tsne_lda = tsne_model.fit_transform(arr)
-
-    # Plot the Topic Clusters using Bokeh
-    output_notebook()
-    n_topics = 4
-    mycolors = np.array([color for name, color in mcolors.TABLEAU_COLORS.items()])
-    plot = figure(title="t-SNE Clustering of {} LDA Topics".format(n_topics), 
-                  plot_width=900, plot_height=700)
-    plot.scatter(x=tsne_lda[:,0], y=tsne_lda[:,1], color=mycolors[topic_num])
-    show(plot)
-    
 
     
 
-def compute_coherence_values(dictionary, doc_term_matrix, doc_clean, stop, start=2, step=3):
-    """
-    Compute the coherence value for a topic cluster
-    """
-    coherence_values = []
-    model_list = []
-    for num_topics in range(start, stop, step):
-        model = LsiModel(doc_term_matrix, num_topics, id2word = dictionary)  # train model
-        model_list.append(model)
-        coherencemodel = CoherenceModel(model=model, texts=doc_clean, dictionary=dictionary, coherence='c_v')
-        coherence_values.append(coherencemodel.get_coherence())
-    return model_list, coherence_values
 
-
-def plot_graph(doc_clean, id2word, corpus, start, stop, step):
-    model_list, coherence_values = compute_coherence_values(id2word, corpus, doc_clean,
-                                                            stop, start, step)
-    # Show graph
-    x = range(start, stop, step)
-    plt.plot(x, coherence_values)
-    plt.xlabel("Number of Topics")
-    plt.ylabel("Coherence score")
-    plt.legend(("coherence_values"), loc='best')
-    plt.show()
