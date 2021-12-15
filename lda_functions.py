@@ -23,7 +23,6 @@ from gensim.models import CoherenceModel
 from gensim.corpora import Dictionary
 from gensim.models import LdaMulticore
 
-from deep_translator import GoogleTranslator
 
 from textblob import TextBlob
 
@@ -42,14 +41,10 @@ from matplotlib import pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
 import matplotlib.colors as mcolors
 
-from sklearn.manifold import TSNE
-from bokeh.plotting import figure, output_file, show
-from bokeh.models import Label
-from bokeh.io import output_notebook
 
 from gensim.models import LsiModel
 
-import little_mallet_wrapper as lmw
+
 
 words = ['lesbian', 'gay', 'homosexual', 'gender', 'bisexual', 'sexuality', 'same sex',
          'asexual', 'biphobia', 'bisexual', 'coming out', 'coming-out', 'gender identity',
@@ -148,7 +143,7 @@ def create_corpus(data):
 
     max_freq = 0.5
     min_wordcount = 5
-    dictionary.filter_extremes(no_below=min_wordcount, no_above=max_freq)
+    id2word.filter_extremes(no_below=min_wordcount, no_above=max_freq)
 
     # create corpus
     texts = data
