@@ -31,6 +31,7 @@ Organization of the files:
     in './data'.
     - exploration_file: it contains all the pre-processing steps data and the exploration with analysis of politician speakers. 
     - statistics: it contains an analysis of a broader spectrum (not onlu politicians) including american citizens. 
+    - lda_functions.py contains necessary functions for the lda topic modeling
 * The folder 'data' contains csv files:
     - americans: american speakers from Quotebank and their information
     - df{year} : quotes per speaker with additional features we won't use
