@@ -44,7 +44,7 @@ Organization of the files:
     - lgbtpopulation : statistics about lgbtqia+ people
 
 Contributions:
-Naomie: weighted analysis, cleaning/grouping data, readme, analysis in stats, basic explorations
-Meghan: quote extraction, parquet extraction, statistics.ipynb (plots, sentiment analysis, topic modeling)
-Elsa: basic explorations, data story website
-Alexiane: basic explorations, data story website
+* Naomie: weighted analysis, cleaning/grouping data, readme, analysis in stats, basic explorations
+* Meghan: quote extraction, parquet extraction, statistics.ipynb (plots, sentiment analysis, topic modeling)
+* Elsa: basic explorations, data story website
+* Alexiane: basic explorations, data story website
