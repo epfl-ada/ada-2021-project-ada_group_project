@@ -34,7 +34,8 @@ Organization of the files:
     - lda_functions.py contains necessary functions for the lda topic modeling
 * The folder 'data' contains csv files:
     - americans: american speakers from Quotebank and their information
-    - df{year} : quotes per speaker with additional features we won't use
+    - df{year} : dataframes with quotes about gay rights from politicians
+    - df{year}all: dataframes with quotes about gay rights from all Americans
     - hatecrime{year} : information about hate crimes in the USA for the given year
     - term{..} : files with congress people
     - us senators
